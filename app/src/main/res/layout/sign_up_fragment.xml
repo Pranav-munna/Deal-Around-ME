@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/margine_30dp"
+            android:background="@drawable/logo" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/left_round_primary_dark"
+                android:button="@null"
+                android:gravity="center"
+                android:text="User account"
+                android:textColor="@color/text_white" />
+
+            <RadioButton
+                android:id="@+id/business"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/right_round_primary_dark_transparent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Business account"
+                android:textColor="@color/text_white" />
+
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/border_white_transparent_button"
+            android:hint="First Name"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:hint="Last Name"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:hint="Email"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:gravity="top"
+            android:hint="Address"
+            android:inputType="textWebEmailAddress"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_2"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/country_b"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:gravity="center_vertical"
+            android:hint="Country"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/city_b"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:gravity="center_vertical"
+            android:hint="City"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/language_b"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:gravity="center_vertical"
+            android:hint="Language"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:hint="Password   (min 8 characters)"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/border_white_transparent_button"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColor="@color/text_white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/linear_for_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/border_white_transparent_button"
+                android:hint="ZIP"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/border_white_transparent_button"
+                android:hint="City"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/border_white_transparent_button"
+                android:hint="Shop Name"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/border_white_transparent_button"
+                android:hint="Car"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/border_white_transparent_button"
+                android:hint="VAT Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/border_white_transparent_button"
+                android:hint="Website"
+                android:inputType="textWebEditText"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dp_10"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/dp_2"
+                android:background="@drawable/border_white_transparent_button"
+                android:gravity="top"
+                android:hint="Description"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="4dp"
+                android:textColor="@color/text_white"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="I agree with terms and conditions"
+            android:textColor="@color/text_white" />
+
+        <Button
+            android:id="@+id/login_now_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
